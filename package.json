@@ -19,6 +19,11 @@
     "dist",
     "src"
   ],
+  "peerDependencies": {
+    "react": ">=16.8.6",
+    "react-dom": ">=16.8.6",
+    "typescript": ">=4.0.0"
+  },
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -37,15 +42,17 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^11.17.3",
+    "rimraf": "^3.0.2",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
   "scripts": {
     "start": "start-storybook -p 6006",
-    "build": "TODO",
+    "build": "yarn clean && tsc",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs/"
+    "build-storybook": "build-storybook -o docs/",
+    "clean": "rimraf dist/"
   },
   "eslintConfig": {
     "extends": [
@@ -75,6 +82,15 @@
     "@storybook/manager-webpack4": "^6.5.9",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
-    "babel-loader": "^8.2.5"
-  }
+    "babel-loader": "^8.2.5",
+    "semantic-release": "^19.0.3"
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ]
 }
