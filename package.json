@@ -1,7 +1,24 @@
 {
   "name": "jpe-mui-components",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
+  "license": "MIT",
+  "typings": "./dist/index.d.ts",
+  "main": "dist/index.js",
+  "homepage": "https://github.com/johannpereze/jpe-mui-components/",
+  "repository": {
+    "url": "https://github.com/johannpereze/jpe-mui-components/",
+    "type": "git"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -19,13 +36,14 @@
     "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^11.17.3",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
   "scripts": {
     "start": "start-storybook -p 6006",
-    "build": "react-scripts build",
+    "build": "TODO",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs/"
   },
