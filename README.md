@@ -6,7 +6,7 @@ My personalized MUI components library to work with formik in my projects
 
 [https://storybook-ui-jpe.netlify.app/](https://storybook-ui-jpe.netlify.app/)
 
-# UI Components Library
+# MUI Components Library
 
 My personalized MUI components library to work with formik in my projects
 
